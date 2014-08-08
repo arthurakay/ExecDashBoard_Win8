@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Package xmlns="http://schemas.microsoft.com/appx/2010/manifest">
+
+  <Identity
+    Name="bca5dd2a-b920-4699-b625-2bc04731505d"
+    Version="1.0.0.0"
+    Publisher="CN=Arthur" />
+
+  <Properties>
+    <DisplayName>Executive Dashboard</DisplayName>
+    <PublisherDisplayName>Arthur</PublisherDisplayName>
+    <Logo>images\storelogo.png</Logo>
+  </Properties>
+
+  <Prerequisites>
+    <OSMinVersion>6.2.1</OSMinVersion>
+    <OSMaxVersionTested>6.2.1</OSMaxVersionTested>
+  </Prerequisites>
+
+  <Resources>
+    <Resource Language="x-generate" />
+  </Resources>
+
+  <Applications>
+    <Application 
+      Id="App"
+      StartPage="default.html">
+
+      <VisualElements
+        DisplayName="Executive Dashboard"
+        Logo="images\logo.png"
+        SmallLogo="images\smalllogo.png"
+        Description="Executive Dashboard"
+        ForegroundText="light"
+        BackgroundColor="#464646">
+
+        <DefaultTile ShowName="allLogos" />
+        <SplashScreen Image="images\splashscreen.png" />
+
+      </VisualElements>
+    </Application>
+  </Applications>
+
+  <Capabilities>
+    <Capability Name="internetClient" />
+  </Capabilities>
+
+</Package>

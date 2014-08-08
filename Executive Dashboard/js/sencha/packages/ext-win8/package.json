@@ -1,0 +1,21 @@
+{
+    "name"                : "ext-win8",
+    "type"                : "code",
+    "creator"             : "Sencha",
+    "summary"             : "Build native Windows 8 applications using Ext JS",
+    "detailedDescription" : "This package includes a simple override allowing Ext JS 5.0.1+ to run inside the Windows 8 CSP",
+    "version"             : "1.0.0",
+    "compatVersion"       : "1.0.0",
+    "format"              : "1",
+    "slicer"              : {
+        "js" : [
+            {
+                "path"             : "${package.dir}/sass/example/custom.js",
+                "isWidgetManifest" : true
+            }
+        ]
+    },
+    "output"              : "${package.dir}/build",
+    "local"               : true,
+    "requires"            : []
+}
