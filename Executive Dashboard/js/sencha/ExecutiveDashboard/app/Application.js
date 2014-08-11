@@ -6,6 +6,10 @@
 Ext.define('ExecDashboard.Application', {
     extend: 'Ext.app.Application',
 
+    requires: [
+        'ExecDashboard.util.Share'
+    ],
+
     name: 'ExecDashboard',
 
     // The tab we want to activate if there is no "#tag" in the URL.
@@ -21,5 +25,9 @@ Ext.define('ExecDashboard.Application', {
         if (Ext.browser.is.Gecko && Ext.browser.version.major < 28) {
             Ext.getBody().addCls('x-flex-wrap-broken');
         }
+
+        //register the app as a Win8 Share Source
+        var dtm = Windows.ApplicationModel.DataTransfer.DataTransferManager.getForCurrentView();
+        dtm.addEventListener("datarequested", ExecDashboard.util.Share.shareCanvasImage);
     }
 });

@@ -85,6 +85,7 @@ Ext.define('ExecDashboard.view.kpi.Kpi', {
         bind: '{kpiMain}',
         minHeight: 290,
         animation: false,
+        itemId : 'KPI_CHART',
 
         insetPadding: '40px 40px 20px 30px',
 
@@ -99,6 +100,13 @@ Ext.define('ExecDashboard.view.kpi.Kpi', {
                 xtype: 'container',
                 cls: 'kpi-chart-title',
                 html: 'CAMPAIGN PERFORMANCE'
+            },
+            {
+                xtype: 'button',
+                text: 'Share...',
+                listeners: {
+                    'click':'onShareClick'
+                }
             },
             '->',
             {

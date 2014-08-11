@@ -22,5 +22,10 @@ Ext.define('ExecDashboard.view.kpi.KpiController', {
         viewModel.set('kpiCategory', activeState);
 
         this.fireEvent('changeroute', this, 'kpi/' + activeState);
+    },
+
+    onShareClick: function () {
+        //ask Win8 to share... callback handled in app/util/Share.js
+        Windows.ApplicationModel.DataTransfer.DataTransferManager.showShareUI();
     }
 });

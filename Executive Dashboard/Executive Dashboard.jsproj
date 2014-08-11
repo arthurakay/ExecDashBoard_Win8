@@ -403,6 +403,7 @@
     <Content Include="js\sencha\ExecutiveDashboard\app.js" />
     <Content Include="js\sencha\ExecutiveDashboard\app.json" />
     <Content Include="js\sencha\ExecutiveDashboard\app\Application.js" />
+    <Content Include="js\sencha\ExecutiveDashboard\app\util\Share.js" />
     <Content Include="js\sencha\ExecutiveDashboard\app\model\Base.js" />
     <Content Include="js\sencha\ExecutiveDashboard\app\model\FullProfitloss.js" />
     <Content Include="js\sencha\ExecutiveDashboard\app\model\Kpi.js" />
