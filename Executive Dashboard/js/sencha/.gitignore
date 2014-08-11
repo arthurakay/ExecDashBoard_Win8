@@ -1,3 +1,4 @@
-./build/.sass-cache
-./build/temp
-./build/ext-win8
+build/.sass-cache/**/*
+build/temp/**/*
+build/ext-win8/**/*
+packages/ext-win8/build/**/*

@@ -8,6 +8,7 @@
      * The relative path to the appliaction's markup file (html, jsp, asp, etc.)
      */
     "indexHtmlPath": "../../../index.html",
+	//"indexHtmlPath": "index.html",
 
     /**
      * Comma-separated string with the paths of directories or files to search. Any classes
@@ -40,8 +41,8 @@
      *      ]
      */
     "requires": [
+		"ext-win8",
 		"sencha-charts"
-		//"ext-win8"
     ],
 
     /**
